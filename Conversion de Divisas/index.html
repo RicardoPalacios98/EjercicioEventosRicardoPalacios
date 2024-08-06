@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversion de Divisas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/Conversion de Divisas/favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="contenedorPadre d-flex flex-wrap justify-content-center align-items-center gap-3 col-4">
+            <h1 class="d-flex justify-content-center align-items-center m-0">Pesos Mxn</h1>
+            <div class="input-group">
+                <input oninput="calculateUSD()" id="io_mxn" class="form-control" aria-label="Sizing example input">
+            </div>
+            <h1 class="d-flex justify-content-center align-items-center m-0">Dolares</h1>
+            <div class="input-group">
+                <input oninput="calculateMXN()" id="io_usd" class="form-control" aria-label="Sizing example input">
+            </div>
+
+        </div>
+    </div>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="index.js"></script>
 </body>
+
 </html>
